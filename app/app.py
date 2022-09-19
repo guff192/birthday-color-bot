@@ -35,7 +35,7 @@ dp.middleware.setup(LoggingMiddleware())
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     # Regular request
-    text = 'Китикэт,напиши дату своего рождения пж) "DD.MM.YY"'
+    text = 'Китикэт, напиши дату своего рождения пж) "DD.MM.YY"'
     await bot.send_message(message.chat.id, text)
 
     # or reply INTO webhook
